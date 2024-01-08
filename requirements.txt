@@ -1,0 +1,4 @@
+flask
+pytesseract
+openai
+python-dotenv
