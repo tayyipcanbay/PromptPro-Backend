@@ -58,7 +58,6 @@ def ask_image():
             print(prompt)
             response = run_query(token, prompt)
             return json.dumps({"status":200, "text": response})
-            # return json.dumps({"status":200, "text": "File received"})
     else:
         return json.dumps({"status":400, "error": "Invalid request method"})
         
