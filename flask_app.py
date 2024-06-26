@@ -1,4 +1,6 @@
 from flask import Flask, request
+from flask_cors import CORS
+
 from werkzeug.utils import secure_filename
 from tesseract_operations import tesseract_it
 from database_operations import (
@@ -10,6 +12,7 @@ import json
 import uuid
 
 app = Flask(__name__)
+CORS(app)
 
 
 def save_image(request):
@@ -85,4 +88,4 @@ def login():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=3131, debug=True)
+    app.run(host="0.0.0.0", port=5500)

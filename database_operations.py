@@ -1,6 +1,9 @@
 import csv
 import os
 
+# users_db_path = "/home/tayyipcanbay/mysite/data/users.csv"
+# queries_db_path = "/home/tayyipcanbay/mysite/data/queries.csv"
+
 users_db_path = "data/users.csv"
 queries_db_path = "data/queries.csv"
 
